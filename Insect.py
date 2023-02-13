@@ -1,11 +1,12 @@
 import InsectClass as i
 
 
-def main():
-    ins_type = i.Insect()
+mosquito = i.Insect('mosquito',2,4)
+housefly = i.Insect('housefly',2,4)
 
-    ins = ins_type.type()
+mosquito.flight_length()
+housefly.flight_length()
 
-    print('This insect is: ', ins)
+print(f'the {mosquito.get_name} can fly up to {mosquito.get_miles}')
 
-    print('This', ins, 'can fly for:', ins_type.get_len_flight())
+print(f'the {housefly.get_name} can fly up to {housefly.get_miles}')
